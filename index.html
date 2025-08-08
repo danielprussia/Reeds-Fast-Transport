@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reed's Fast Transport</title>
+    <style>
+        /* American Flag Background */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #B22234;
+            background-image: 
+                linear-gradient(
+                    to bottom,
+                    #B22234,
+                    #B22234 7.7%,
+                    white 7.7%,
+                    white 15.4%,
+                    #B22234 15.4%,
+                    #B22234 23.1%,
+                    white 23.1%,
+                    white 30.8%,
+                    #B22234 30.8%,
+                    #B22234 38.5%,
+                    white 38.5%,
+                    white 46.2%,
+                    #B22234 46.2%,
+                    #B22234 53.9%,
+                    white 53.9%,
+                    white 61.6%,
+                    #B22234 61.6%,
+                    #B22234 69.3%,
+                    white 69.3%,
+                    white 77%,
+                    #B22234 77%,
+                    #B22234 84.7%,
+                    white 84.7%,
+                    white 92.4%,
+                    #B22234 92.4%,
+                    #B22234 100%
+                );
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Blue canton for the flag */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 38%;
+            height: 53.9%;
+            background-color: #3C3B6E;
+            z-index: -1;
+        }
+
+        /* White stars (simplified representation) */
+        body::after {
+            content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 38%;
+            height: 53.9%;
+            color: white;
+            font-size: 1.2vw;
+            text-align: center;
+            padding-top: 2%;
+            line-height: 1.4;
+            word-wrap: break-word;
+            z-index: -1;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Fancy title */
+        .title {
+            font-family: 'Times New Roman', serif;
+            font-size: 4.5rem;
+            text-align: center;
+            color: #3C3B6E;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(to right, #B22234, #3C3B6E, #B22234);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            border-bottom: 3px solid #3C3B6E;
+        }
+
+        /* Truck image styling */
+        .truck-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 3px solid #3C3B6E;
+        }
+
+        /* Content styling */
+        .content {
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background-color: #3C3B6E;
+            margin-top: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            body::before {
+                width: 40%;
+                height: 40%;
+            }
+            
+            body::after {
+                width: 40%;
+                height: 40%;
+                font-size: 2vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Reed's Fast Transport</h1>
+        
+        <img class="truck-image" src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Delivery Truck">
+        
+        <div class="content">
+            <h2>Your Reliable Transportation Solution</h2>
+            <p>At Reed's Fast Transport, we pride ourselves on delivering your goods quickly, safely, and with the utmost care. Our fleet of modern trucks and experienced drivers ensure your shipments arrive on time, every time.</p>
+            
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Nationwide coverage with local expertise</li>
+                <li>24/7 dispatch and tracking</li>
+                <li>Competitive pricing with no hidden fees</li>
+                <li>Fully licensed and insured</li>
+                <li>Exceptional customer service</li>
+            </ul>
+            
+            <h2>Contact Us Today</h2>
+            <p>Call: (555) 123-4567<br>
+            Email: info@reedsfasttransport.com<br>
+            Address: 123 Patriot Way, Hometown, USA</p>
+        </div>
+        
+        <footer>
+            &copy; 2023 Reed's Fast Transport - Proudly Serving America
+        </footer>
+    </div>
+</body>
+</html>
